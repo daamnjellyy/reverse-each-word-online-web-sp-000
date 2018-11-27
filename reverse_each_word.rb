@@ -1,6 +1,20 @@
-sentence = ("i love eli", "i love my dog")
-def reverse(sentence)
-  sentence.each do |sentence|
-    reverse_each_word #{sentence}
+def reverse_each_word_with_each(string)
+  original_array = string.split(" ")
+  return_array = []
+  original_array.each do|string|
+    return_array << string.reverse
   end
+  return_array.join(" ")
+end
+
+def reverse_each_word(string)
+  array = string.split(" ")
+  test_array = []
+  array.collect do|string|
+    test_array << string.reverse 
   end
+  test_array.join(" ")
+end
+
+
+reverse_each_word("Hello there, and how are you?")
